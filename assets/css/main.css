@@ -29,7 +29,35 @@ h1, h2, h3, h4, h5, h6, p {
 /****************
 * Nav bar
 *****************/
+#navbar {
+  overflow: hidden;
+  background-color: rgb(81, 96, 150);
+  z-index: 1;
+}
 
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  border-bottom: #fff .5px solid;
+}
+
+#navbar a:hover {
+	background: rgba(255, 236, 236, 0.502);
+	text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 
 /****************
 * Landing Page
