@@ -1,191 +1,172 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is my personal website. Here you can see my latest coding projects and learn more about myself and what I do.">
-    <title>I am Benjamin Carlson</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I am Benjamin J. Carlson</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="is-preload">  
+<body data-hijacking="off" data-animation="none">
 
-    <section id="banner">
-        <div class="inner">
-            <div class="logo"><span class="fa fa-code"></span></div>
-            <h2>I Am Benjamin J. Carlson</h2>
-            <p>Sophomore at Bryant University studying Data Science - self taught web developer and blogger</p>
-        </div>
-    </section>
+    <!-- nav -->
+    <!-- <nav>
+        <ul class="cd-vertical-nav">
+            <li><a href="#0" class="cd-prev inactive">Next</a></li>
+            <li><a href="#0" class="cd-next">Prev</a></li>
+        </ul>
+    </nav> -->
 
-    <div id="navbar">
+    <!-- <div id="navbar">
         <a href="https://www.benjamincarlson.net">Benjamin Carlson</a>
         <a href="about.html">About</a>
         <a target="_blank" href="https://bencarlson.co/">Blog</a>
         <a target="_blank" href="https://github.com/bjcarlson42">Github</a>
         <a target="_blank" href="https://www.linkedin.com/in/bjcarlson42/">LinkedIn</a>
-    </div>
-
-    <div id="header">
-        <h2 class="major">Experience</h2>
-        <div class="row container-fluid">
-            <div class="col-xl box">
-                <h3 class="work-experience-heading">The Law Forum LLC, Wallingford, CT</h3>
-                <hr class="work-line">
-                <p class="date">May 2019 - August 2019</p>
-                <img class="image" src="/images/work-experience01.jpg" alt="building picture">
-                <p class="work-experience-paragraph">Worked with the development team to generate reports using C# linq queries and updated existing sites using git. Worked closely with their database 
-                using SQL queries. Oversaw website development from start to finish from a technical and business standpoint</p>
-                <a target="_blank" href="https://www.linkedin.com/company/law-forum-llc/about/" class="btn work-btn">View on LinkedIn</a>
-            </div>
-
-
-            <!-- This is where I want to go eventually. Wrapping the image and paragraph in container, row, col makes it look nicer. Have to
-            fix how it looks as screen gets larger which is why I am implementing this later. -->
-            <!-- <div class="col-xl box">
-                <h3 class="work-experience-heading">The Law Forum LLC, Wallingford, CT</h3>
-                <hr class="work-line">
-                <p class="date">July 2018 - August 2018</p>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <img class="image" src="/images/work-experience01.jpg" alt="building picture">
-                        </div>
-                        <div class="col-sm">
-                            <p class="work-experience-paragraph">Worked with the development team to generate reports using C# linq queries and
-                                updated existing sites using git. Worked closely with their database
-                                using SQL queries. Oversaw website development from start to finish from a technical and business standpoint</p>
-                        </div>
-                    </div>
-                </div>
-                <a target="_blank" href="https://www.linkedin.com/company/law-forum-llc/about/" class="btn work-btn">View on
-                    LinkedIn</a>
-            </div>   -->
-
-
-            <div class="col-xl box">
-                <h3 class="work-experience-heading">Middletown City Hall, Middletown, CT</h3>
-                <hr class="work-line">
-                <p class="date">July 2018 - August 2018</p>
-                <img class="image" src="/images/work-experience02.jpg" alt="building picture">
-                <p class="work-experience-paragraph">Responsibilities included, but were not limited to, secure disposal of hard drives and other electronics, removing
-                security cameras, printers and electronic inventory, and responding to City Hall Worker’s I.T. related questions.</p>
-                <a target="_blank" href="https://www.linkedin.com/company/law-forum-llc/about/" class="btn work-btn">View on LinkedIn</a>
-            </div>
-            <div class="col-xl box">
-                <h3 class="work-experience-heading">Soccer Referee, Connecticut</h3>
-                <hr class="work-line">
-                <p class="date">May 2017 - August 2018</p>
-                <img class="image" src="/images/work-experience03.jpg" alt="soccer ref picture">
-                <p class="work-experience-paragraph">Worked with a team of two other referees to enforce the rules of soccer while encouraging a fun and enjoyable
-                atmosphere.</p>
-                <a target="_blank" href="https://www.linkedin.com/company/law-forum-llc/about/" class="btn work-btn">View on LinkedIn</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="skills">
-        <div class="container">
-            <h1>Skills</h1>
-            <div class="row">
-                <div class="col-lg">
-                    <h3>Technical Skills:</h3>
-                    <ul>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>HTML5/CSS3</li>
-                        <li>SQL</li>
-                        <li>Javascript</li>
-                        <li>SAS</li>
-                        <li>R</li>
-                        <li>PHP</li>
-                        <li>.NET</li>
-                        <li>Django</li>
-                        <li>Wordpress</li>
-                        <li>Jupyter Notebook</li>
-                    </ul>
-                </div>
-                <div class="col-lg">
-                    <h3>Soft Skills:</h3>
-                    <ul>
-                        <li>Critical Thinking</li>
-                        <li>Effective Communication</li>
-                        <li>Business Sense</li>
-                        <li>Problem Solving</li>
-                        <li>Teamwork</li>
-                        <li>Time Management</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div> -->
 
-    <div id="section-two">
-        <div class="container-fluid">
-            <h2 class="major">Projects</h2>
-            <p class="projects-p">Here are some of my most recent projects. If you would like to see more of my work you can visit my GitHub page <a target="_blank" href="https://github.com/bjcarlson42">here</a>.</p>
-            <div class="row">
-                <div class="col-sm project-box">
-                    <img class="image-project" src="images/pic04.png" alt="personal website" />
-                    <div class="project-container">
-                        <h3 class="major">Personal Website</h3>
-                        <p>This project is the website you are currently on... my personal website hosted through GitHub. I plan to continuously
-                            update it with current information and new features.</p>
-                        <a target="_blank" href="https://github.com/bjcarlson42/personal-website" class="btn">View Code</a>
-                    </div>
-                </div>
-                <div class="col-sm project-box">
-                    <img class="image-project" src="images/pic05.png" alt="Grid Website" />
-                    <div class="project-container">
-                        <h3 class="major">Grid Website</h3>
-                        <p>This site originally was designed to generate a 3x3 grid with some requirements it must adhere to but over time I
-                            evolved it into a more robust program.</p>
-                        <a target="_blank" href="https://github.com/bjcarlson42/grid-website" class="btn">View Code</a>
-                    </div>
-                </div>
+    <!-- <a href="#landing-page" class="float">
+        <i class="my-float">Top</i>
+    </a> -->
+
+    <div id="landing-page">
+        <div class="centered">
+            <h3 class="title">Hi, I am</h3>
+            <h1 class="title">Benjamin J. Carlson</h1>
+        </div>
+        <a href="#experience"><i class="fa fa-arrow-down"></i></a>
+    </div>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="experience-h2">Experience</h2>
+            <hr>
+            <div class="image-container">
+                <img class="image" src="/images/work-experience01.jpg" alt="">
             </div>
-            <div class="row">
-                <div class="col-sm project-box">
-                    <img class="image-project" src="images/pic06.png" alt="Photography Website" />
-                    <div class="project-container">
-                        <h3 class="major">Photography Portfolio Website</h3>
-                        <p>This website is a photography portfolio for a photographer to showcase their pictures as well as about, contact, and
-                            services pages.</p>
-                        <a target="_blank" href="https://github.com/bjcarlson42/photography-portfolio-website" class="btn">View Code</a>
-                    </div>
+            <div class="col-xs">
+                <div>
+                    <h4 class="experience-h4">Software Developer Intern</h4>
+                    <p class="date experience-p">May 2019 - August 2019</p>
                 </div>
-                <div class="col-sm project-box">
-                    <img class="image-project" src="images/pic07.jpg" alt="Word Counter" />
-                    <div class="project-container">
-                        <h3 class="major">Word Counter</h3>
-                        <p>This console app takes in a text file, counts the words and some other things, and outputs a text file. Build in C#.</p>
-                        <a target="_blank" href="https://github.com/bjcarlson42/word-counter" class="btn">View Code</a>
-                    </div>
+                <h5 class="experience-h5">Law Forum LLC</h5>
+                <p class="experience-p">Worked with the development team to generate reports using C# linq queries and
+                    updated
+                    existing sites using git. Worked
+                    closely with their database using SQL queries. Oversaw website development from start to finish from
+                    a technical
+                    and
+                    business standpoint</p>
+                <a target="_blank" href="https://www.linkedin.com/company/law-forum-llc/about/"
+                    class="btn btn-primary btn2">View on
+                    LinkedIn</a>
+            </div>
+            <div class="col-xs">
+                <div class="image-container">
+                    <img class="image" src="/images/work-experience02.jpg" alt="">
                 </div>
+                <div>
+                    <h4 class="experience-h4">I.T. Intern</h4>
+                    <p class="date experience-p">July 2018 - August 2018</p>
+                </div>
+                <h5 class="experience-h5">Middletown City Hall</h5>
+                <p class="experience-p">Responsibilities included, but were not limited to, secure disposal of hard
+                    drives and other electronics, removing
+                    security cameras, printers and electronic inventory, and responding to City Hall Worker’s I.T.
+                    related questions.</p>
+                <a target="_blank" href="https://www.linkedin.com/company/city-of-middletown-ct/about/"
+                    class="btn btn-primary btn2">View on LinkedIn</a>
+            </div>
+            <div class="col-xs">
+                <div class="image-container">
+                    <img class="image" src="/images/work-experience03.jpg" alt="">
+                </div>
+                <div>
+                    <h4 class="experience-h4">Soccer Referee</h4>
+                    <p class="date experience-p">May 2017 - August 2018</p>
+                </div>
+                <h5 class="experience-h5">Middletown CT Area</h5>
+                <p class="experience-p">Worked with a team of two other referees to enforce the rules of soccer while
+                    encouraging a fun and enjoyable
+                    atmosphere.</p>
+                <a target="_blank" href="https://www.linkedin.com/company/connecticut-state-referee-program/"
+                    class="btn btn-primary btn2">View on LinkedIn</a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="footer">
-        <p class="footer-p">&copy; 2019 | Created by Benjamin Carlson</p>
-    </div>
+    <section id="projects">
+        <div class="container">
+            <h2 class="projects-h2">Projects</h2>
+            <hr class="projects-hr">
+            <div class="col-xs col-projects">
+                <div class="image-container2">
+                    <img class="image2" src="/images/pic04.png" alt="">
+                </div>
+                <div>
+                    <h4 class="projects-h4">Personal Website</h4>
+                    <p class="date projects-p">May 2019 - August 2019</p>
+                </div>
+                <p class="projects-p">This project is the website you are currently on... my personal website hosted
+                    through GitHub. I plan to continuously
+                    update it with current information and new features.</p>
+                <a target="_blank" href="https://github.com/bjcarlson42/personal-website"
+                    class="btn btn-primary btn1">View Code</a>
+            </div>
+            <div class="col-xs col-projects">
+                <div class="image-container2">
+                    <img class="image2" src="/images/pic05.png" alt="">
+                </div>
+                <div>
+                    <h4 class="projects-h4">Grid Website</h4>
+                    <p class="date projects-p">July 2018 - August 208</p>
+                </div>
+                <p class="projects-p">This site originally was designed to generate a 3x3 grid with some requirements it
+                    must adhere to but over time I
+                    evolved it into a more robust program.</p>
+                <a target="_blank" href="https://github.com/bjcarlson42/grid-website" class="btn btn-primary btn1">View
+                    Code</a>
+            </div>
+            <div class="col-xs col-projects">
+                <div class="image-container2">
+                    <img class="image2" src="/images/pic06.png" alt="">
+                </div>
+                <div>
+                    <h4 class="projects-h4">Photography Portfolio Website</h4>
+                    <p class="date projects-p">May 2017 - August 208</p>
+                </div>
+                <p class="projects-p">This website is a photography portfolio for a photographer to showcase their
+                    pictures as well as about, contact, and
+                    services pages.</p>
+                <a target="_blank" href="https://github.com/bjcarlson42/photography-portfolio-website"
+                    class="btn btn-primary btn1">View Code</a>
+            </div>
+            <div class="col-xs col-projects">
+                <div class="image-container2">
+                    <img class="image2" src="/images/pic07.jpg" alt="">
+                </div>
+                <div>
+                    <h4 class="projects-h4">Word Counter</h4>
+                    <p class="date projects-p">May 2019 - August 2019</p>
+                </div>
+                <p class="projects-p">This console app takes in a text file, counts the words and some other things, and
+                    outputs a text file. Build in C#.</p>
+                <a target="_blank" href="https://github.com/bjcarlson42/word-counter" class="btn btn-primary btn1">View
+                    Code</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- scripts -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <section class="footer">
+        <p class="p-footer">&copy; 2019 | Designed and Built by: <a class="footer-href"
+                href="https://benjamincarlson.net">Benjamin Carlson</a></p>
+    </section>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
-
