@@ -7,20 +7,20 @@
 	padding: 0;
 }
 
-body {
-		background-color: #2e3141;
+/* body {
+		background-color: #2e3141; */
 		/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/bg.jpg"); */
-		background-image: url("../../images/bg.jpg");
+		/* background-image: url("../../images/bg.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center; 
 }
 
- 	@media screen and (max-width: 1024px) {
+ 	@media screen and (min-width: 1024px) {
 	body {
 		background: rgb(81, 96, 150);
 	}
-} 
+}  */
 
 body {
 	background: rgb(81, 96, 150);
@@ -103,19 +103,27 @@ hr {
 	width: 250px;
 	padding: 5px;
 }
-
+ 
 @media screen and (max-width: 1000px) {
 	.image-container {
 	height: 200px;
 	width: 200px;
 	padding: 5px;
+	/* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
 }
 
 .image-container2 {
 	height: 200px;
 	width: 200px;
 	padding: 5px;
-}
+	/* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+	}
 }
 
 .btn1 {
@@ -133,7 +141,6 @@ hr {
 	background: #fff;
 	border: 1px solid #fff;
 	color: #2e3141;
-	float: left;
 }
 
 .btn2:hover {
@@ -211,6 +218,27 @@ hr {
 	color: #fff;
 }
 
+@media screen and (max-width: 699px) {
+	.experience-h4, .experience-h5, .experience-p {
+		text-align: center;
+	}
+
+	.image-container {
+		display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+		width: 50%;
+	}
+
+	.btn2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		margin-bottom: 5%;
+	}
+}
+
 .row {
 	margin-bottom: 7.5%;
 }
@@ -237,6 +265,35 @@ hr {
 
 .projects-h4, .projects-h5, .projects-p {
 	color: #2e3141;
+}
+
+@media screen and (max-width: 699px) {
+	.projects-h4, .projects-h5, .projects-p {
+		text-align: center;
+	}
+
+	.image-container2 {
+		display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+		width: 50%;
+	}
+
+	.btn1 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		margin-bottom: 5%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.image-container, .image-container2 {
+	height: 250px;
+	width: 250px;
+	padding: 5px;
+	}
 }
 
 /*
