@@ -7,20 +7,20 @@
 	padding: 0;
 }
 
-/*body {
-		background-color: #2e3141;*/
+body {
+		background-color: #2e3141;
 		/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/bg.jpg"); */
-		/*background-image: url("../../images/bg.jpg");
+		background-image: url("../../images/bg.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center; 
-}*/
+}
 
-/* @media screen and (min-width: 1024px) {
+ 	@media screen and (max-width: 1024px) {
 	body {
 		background: rgb(81, 96, 150);
 	}
-} */
+} 
 
 body {
 	background: rgb(81, 96, 150);
@@ -93,17 +93,29 @@ hr {
 }
 
 .image-container {
+	height: 250px;
+	width: 250px;
+	padding: 5px;
+}
+
+.image-container2 {
+	height: 250px;
+	width: 250px;
+	padding: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+	.image-container {
 	height: 200px;
 	width: 200px;
-	float: right;
 	padding: 5px;
 }
 
 .image-container2 {
 	height: 200px;
 	width: 200px;
-	float: left;
 	padding: 5px;
+}
 }
 
 .btn1 {
@@ -188,16 +200,25 @@ hr {
 }
 
 .date {
-	float: right;
 	font-style: italic;
 }
 
-.col-xs {
-	margin-bottom: 10%;
+.col-xs-4 {
+	padding: 2%;
 }
 
 .experience-h4, .experience-h5, .experience-p {
 	color: #fff;
+}
+
+.row {
+	margin-bottom: 7.5%;
+}
+
+@media screen and (min-width: 425){
+	.row {
+		margin-bottom: 50%;
+	}
 }
 
 /*
