@@ -350,6 +350,15 @@ hr {
 }
 
 /*
+* Skills Section
+*/
+.skills-h2 {
+	text-align: center;
+	padding-top: 5%;
+	color: #fff;
+}
+
+/*
 * Footer
 */
 .p-footer {
