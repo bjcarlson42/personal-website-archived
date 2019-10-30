@@ -1,2 +1,2 @@
-# personal-website
-Personal Website that I am building. 
+# Personal Website
+Personal portfolio/resume website that I am building. I update it regularly as I learn new cool things. 
