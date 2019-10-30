@@ -240,6 +240,19 @@ hr {
   left: 48%;
 }
 
+/* fixes issue of fa not being centered */
+@media screen and (max-width: 426px) {
+	.fa-arrow-down {
+  left: 46%;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.fa-arrow-down {
+  left: 45%;
+	}
+}
+
 .title {
 	color: #fff;
 }
@@ -352,11 +365,20 @@ hr {
 /*
 * Skills Section
 */
-.skills-h2 {
+/* .skills-h2 {
 	text-align: center;
 	padding-top: 5%;
 	color: #fff;
 }
+
+.skills-img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 50%;
+	height: 200px;
+	width: 200px;
+} */
 
 /*
 * Footer
