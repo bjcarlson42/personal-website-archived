@@ -240,6 +240,22 @@ hr {
   left: 48%;
 }
 
+/* .links {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-left: -40px;
+    z-index: 2;
+}
+
+.links li {
+    display: inline;
+    color: white;
+    padding: 0px 10px;
+    font-size: 30px;
+} */
+
 /* fixes issue of fa not being centered */
 @media screen and (max-width: 426px) {
 	.fa-arrow-down {

@@ -152,7 +152,7 @@
                     for computer science with the world.
                 </p>
                 <ul class="actions">
-                    <li><a target="_blank" href="https://www.bencarlson.co" class="button primary large">Read my Blog</a></li>
+                    <li><a target="_blank" href="https://www.computersciencecentral.dev" class="button primary large">Read my Blog</a></li>
                     <!-- <li><a href="#wrapper" class="button large">Back to Top</a></li> -->
                 </ul>
             </div>
@@ -164,24 +164,48 @@
                 <h2>Get in touch</h2>
             </header>
             <div class="content">
-                <p><strong>Like what you see?</strong> Send me a message with any inqueries so just to say hi. I love working or just hearing 
-                about new project ideas!</p>
-                <form>
+                <p><strong>Like what you see?</strong> Send me a message with any inqueries or just to say hi. I love working on 
+                    projects with people or just hearing about new project ideas!</p>
+                <form action="response.html" method="post" onsubmit="return validateForm()">
                     <div class="fields">
                         <div class="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" disabled/>
+                            <label for="name" id="lblName" style="color: #fff">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" style="color: black" disabled/>
                         </div>
                         <div class="field half">
-                            <input type="email" name="email" id="email" placeholder="Email" disabled/>
+                            <label for="email" id="lblEmail" style="color: #fff">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" style="color: black" disabled/>
                         </div>
                         <div class="field">
-                            <textarea name="message" id="message" placeholder="Message" rows="7" disabled></textarea>
+                            <label for="message" id="lblMessage" style="color: #fff">Message</label>
+                            <textarea name="message" id="message" placeholder="Message" rows="7" style="color: black" disabled></textarea>
                         </div>
                     </div>
                     <ul class="actions">
                         <li><input type="submit" value="Send Message" class="button primary" disabled/></li>
                     </ul>
+                    <p id="msg"></p>
                 </form>
+                <!-- <form action="response.html" medhod="post" onsubmit="return validateForm()">
+                    <label for="uName" id="lblUsername" style="color: #fff">Username</label>
+                    <input type="text" name="username" id="uName" style="color:#000"/>
+                
+                    <label for="pWord" id="lblpassword" style="color: #fff">Password</label>
+                    <input type="text" name="password" id="pWord" style="color:#000"/>
+                
+                    <label for="date" id="lblDate" style="color: #fff">Date</label>
+                    <input type="date" name="date" id="date" style="color:#000"/>
+                
+                    <label for="currency" id="lblCurrency" style="color: #fff">Currency</label>
+                    <input type="number" name="currency" id="currency" style="color:#000"/>
+                
+                    <label for="number" id="lblNumber" style="color: #fff">Phone Number</label>
+                    <input type="number" name="number" id="number" style="color:#000"/>
+                
+                    <input type="submit" value="login" />
+                
+                    <p id="msg"></p>
+                </form> -->
             </div>
             <footer>
                 <ul class="items">
@@ -224,6 +248,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/about.js"></script>
+    <script src="assets/js/form.js"></script>
 
 </body>
 
