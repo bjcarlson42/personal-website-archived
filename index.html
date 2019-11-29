@@ -19,9 +19,10 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
     <meta content="/images/" itemprop="image">
+
 </head>
 
-<body data-hijacking="off" data-animation="none">
+<body>
 
     <!-- nav -->
     <!-- <nav>
@@ -36,9 +37,28 @@
     </a> -->
 
     <div id="landing-page">
+        <!-- <div class="navbar-wrapper">
+            <div class="navbar-content">
+        
+                <div class="topnav">
+                    <div class="topnav-centered">
+                        <a href="https://www.benjamincarlson.net">Benjamin Carlson</a>
+                    </div>
+        
+                    <a target="_blank" href="https://github.com/bjcarlson42">Github</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/bjcarlson42/">LinkedIn</a>
+        
+                    <div class="topnav-right">
+                        <a target="_blank" href="https://bencarlson.co/">Blog</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
         <div class="centered">
-            <h3 class="title">Hi, I am</h3>
-            <h1 class="title">Benjamin J. Carlson</h1>
+            <h3 class="title title-left">Hi,&nbsp;I&nbsp;am</h3>
+            <h1 class="title title-right">Benjamin&nbsp;J. <br> Carlson</h1>
         </div>
         <!-- <div class="links">
             <ul>
@@ -74,25 +94,36 @@
     </div>
 
     <section id="experience">
+        <!-- navbar -->
+        <div class="nav-wrapper">
+            <nav class="navbar navbar-expand-md" id="navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <ul class="navbar-nav mr-auto collapse navbar-collapse">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://github.com/bjcarlson42"><img src="/images/Octocat/Octocat.jpg" alt=""
+                                    width="24px" height="24px"> Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/bjcarlson42/"><img src="/images/LI-In-Bug.png"
+                                    alt="" width="24px" height="24px"> LinkedIn</a>
+                        </li>
+                        <a class="navbar-brand" href="index.html" style="padding-left: 20px;">Benjamin Carlson</a>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://bencarlson.co/"><img src="/images/Logo-Ben.png" alt="" width="24px"
+                                    height="24px">
+                                Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><img src="/images/ben-about.png" alt="" height="24px" width="24px"> About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
         <div class="container">
-            <div class="navbar-wrapper">
-                <div class="navbar-content">
-
-            <div class="topnav">
-                <div class="topnav-centered">
-                    <a href="https://www.benjamincarlson.net">Benjamin Carlson</a>
-                </div>
-
-                <a target="_blank" href="https://github.com/bjcarlson42">Github</a>
-                <a target="_blank" href="https://www.linkedin.com/in/bjcarlson42/">LinkedIn</a>
-
-                <div class="topnav-right">
-                    <a target="_blank" href="https://bencarlson.co/">Blog</a>
-                    <a href="about.html">About</a>
-                </div>
-                </div>
-            </div>
-            </div>
 
             <h2 class="experience-h2">Experience</h2>
             <hr>
@@ -232,7 +263,7 @@
                     </div>
                     <p class="projects-p">This website is a photography portfolio for a photographer to showcase their
                         pictures as well as about, contact, and
-                        services pages. I build it with the .NET framework a while ago as it was the only framework I
+                        services pages. I built it with the .NET framework a while ago as it was the only framework I
                         knew well.
                         Since, I have gotten into wordpress development and some other frameworks that would work better
                         for such a website.
@@ -259,7 +290,7 @@
                     </div>
                     <p class="projects-p">This console app takes in a text file, counts the words and some other things,
                         and
-                        outputs a text file. Build in C#. Check out the Github repo to see the all the different
+                        outputs a text file. Built in C#. Check out the Github repo to see the all the different
                         branches and the
                         progression of the program. I continuously changed things to make it more efficient and better.
                     </p>
@@ -309,7 +340,8 @@
                 href="https://benjamincarlson.net">Benjamin Carlson</a></p>
     </section>
 
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,26 +1,10 @@
 /*
 * General Styles
 */
-
 * {
 	margin: 0;
 	padding: 0;
 }
-
-/* body {
-		background-color: #2e3141; */
-		/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/bg.jpg"); */
-		/* background-image: url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center; 
-}
-
- 	@media screen and (min-width: 1024px) {
-	body {
-		background: rgb(81, 96, 150);
-	}
-}  */
 
 body {
 	background: rgb(81, 96, 150);
@@ -109,20 +93,12 @@ hr {
 	height: 200px;
 	width: 200px;
 	padding: 5px;
-	/* display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; */
 }
 
 .image-container2 {
 	height: 200px;
 	width: 200px;
 	padding: 5px;
-	/* display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; */
 	}
 }
 
@@ -150,33 +126,18 @@ hr {
 }
 
 /*
-* Button to Top
-*/
-/* .float{
-	position:fixed;
-	width:60px;
-	height:35px;
-	bottom:40px;
-	right:40px;
-	background-color:#2e3141;
-	color:#fff;
-	text-align:center;
-    z-index: 1;
-	border: 1px solid #2e3141;
-} */
-
-/*
 * Nav Bar
 */
-.topnav {
-  position: relative;
-  background-color: #2e3141;
+#navbar {
   overflow: hidden;
+	background-color: #2e3141;
+	z-index: 1;
+	display: inline-block;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+#navbar a {
   float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -184,39 +145,31 @@ hr {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+#navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.nav-link, .navbar-brand {
+	color: white;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+.content {
+  padding: 16px;
 }
 
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
+.nav-wrapper {
+	text-align: center;
+}
 
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
+/* .sticky {
+  position: fixed;
+	top: 0;
+	border-bottom: 2px solid rgb(81, 96, 150);
+} */
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /*
@@ -236,25 +189,10 @@ hr {
 	padding: 1%;
 	border-radius: 50%;
 	position: absolute;
-	top: 90%;
-  left: 48%;
+	top: 80%;
+	left: 48%;
+	animation: bottom_to_top 1.5s;
 }
-
-/* .links {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    margin-left: -40px;
-    z-index: 2;
-}
-
-.links li {
-    display: inline;
-    color: white;
-    padding: 0px 10px;
-    font-size: 30px;
-} */
 
 /* fixes issue of fa not being centered */
 @media screen and (max-width: 426px) {
@@ -271,6 +209,66 @@ hr {
 
 .title {
 	color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+	.title-right {
+		font-size:40px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.title-right {
+		font-size:60px;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.title-right {
+		font-size:35px;
+	}
+
+	.title-left {
+		font-size: 20;
+	}
+}
+
+.title-left {
+	animation: left_to_right 1.5s;
+}
+
+.title-right {
+	animation: right_to_left 1.5s;
+}
+
+@keyframes right_to_left {
+  from {
+		margin-left: 100%;
+		opacity: 0;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes left_to_right {
+  from {
+		margin-left: -100%;
+		opacity: 0;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes bottom_to_top {
+	from {
+		margin-top: 100%;
+		opacity: 0;
+	}
+	to {
+		margin-top: 0;
+	}
 }
 
 /*
@@ -377,24 +375,6 @@ hr {
 	padding: 5px;
 	}
 }
-
-/*
-* Skills Section
-*/
-/* .skills-h2 {
-	text-align: center;
-	padding-top: 5%;
-	color: #fff;
-}
-
-.skills-img {
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 50%;
-	height: 200px;
-	width: 200px;
-} */
 
 /*
 * Footer
