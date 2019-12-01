@@ -146,8 +146,7 @@ hr {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  text-decoration: underline;
 }
 
 .nav-link, .navbar-brand {
@@ -196,6 +195,12 @@ hr {
 	padding: 1%;	
 	animation: bottom_to_top 1.5s;
 	transform: translatey(90vh);
+}
+
+@media screen and (max-width: 800px) {
+	.fa-arrow-down {
+		transform: translatey(80vh);
+	}
 }
 
 .fa-parent {
