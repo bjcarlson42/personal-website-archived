@@ -146,7 +146,7 @@ hr {
 }
 
 #navbar a:hover {
-  text-decoration: underline;
+	background-color: lightgray;
 }
 
 .nav-link, .navbar-brand {
@@ -192,7 +192,6 @@ hr {
 .fa-arrow-down {
 	color: #fff;
 	font-size: 2em;
-	padding: 1%;	
 	animation: bottom_to_top;
 	animation-duration: 1.5s;
 	transform: translatey(90vh);
@@ -207,6 +206,7 @@ hr {
 	animation-delay: 2s;
 }
 
+/* fix for phone screens that have the bottom tab blocking the arrow */
 @media screen and (max-width: 800px) {
 	.fa-arrow-down {
 		transform: translatey(80vh);
@@ -331,9 +331,13 @@ hr {
 	color: #fff;
 }
 
-@media screen and (max-width: 699px) {
-	.experience-h4, .experience-h5, .experience-p {
+@media screen and (max-width: 767px) {
+	.experience-h4, .experience-h5, .date{
 		text-align: center;
+	}
+
+	.experience-p {
+		text-align: justify;
 	}
 
 	.image-container {
@@ -380,9 +384,13 @@ hr {
 	color: #2e3141;
 }
 
-@media screen and (max-width: 699px) {
-	.projects-h4, .projects-h5, .projects-p {
+@media screen and (max-width: 767px) {
+	.projects-h4, .projects-h5, .date {
 		text-align: center;
+	}
+
+	.projects-p {
+		text-align: justify;
 	}
 
 	.image-container2 {
