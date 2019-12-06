@@ -71,6 +71,7 @@ hr {
 .image {
 	width: 100%;
 	height: 100%;
+	border-radius: 20%;
 }
 
 .image2 {
@@ -356,6 +357,7 @@ hr {
 	font-size: 30px;
 }
 
+/* grow for social icons */
 .grow:hover,
 .grow:focus,
 .grow:active {
@@ -363,6 +365,32 @@ hr {
 }
 
 .grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+/* grow for project boxes */
+.grow-box:hover,
+.grow-box:focus,
+.grow-box:active {
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 800px) {
+	.grow-box:hover,
+	.grow-box:focus,
+	.grow-box:active {
+    transform: scale(1.07);
+}
+}
+
+.grow-box {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -414,7 +442,7 @@ hr {
 
 @media screen and (max-width: 767px) {
 	.experience-h4, .experience-h5, .date{
-		text-align: center;
+		text-align: center !important;
 	}
 
 	.experience-p {
@@ -461,41 +489,82 @@ hr {
 	color: #2e3141;
 }
 
-.projects-h4, .projects-h5, .projects-p {
+.project-h2 {
+	font-weight: bold;
 	color: #2e3141;
 }
 
-@media screen and (max-width: 767px) {
-	.projects-h4, .projects-h5, .date {
-		text-align: center;
-	}
-
-	.projects-p {
-		text-align: justify;
-	}
-
-	.image-container2 {
-		display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-		width: 50%;
-	}
-
-	.btn1 {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-		margin-bottom: 5%;
-	}
+.project-row {
+	text-align: center;
 }
 
-@media screen and (max-width: 425px) {
-	.image-container, .image-container2 {
-	height: 250px;
+.project-box {
+	width: 350px;
+	height: 350px;
+	border-radius: 10%;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+@media screen and (min-width: 425){
+	.project-box {
 	width: 250px;
-	padding: 5px;
-	}
+	height: 250px;
+}
+}
+
+.project-box img {
+	opacity: .5;
+}
+
+.project-box img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+}
+
+.projects-h4 {
+	margin-top: 80px;
+	color: #2e3141;
+	font-size: 18px; 
+}
+
+.projects-p {
+	font-size: 10px;
+	color: #2e3141;
+}
+
+.project-box-one {
+	background-color: lightblue;
+}
+
+.project-box-two {
+	background-color: lightcoral;
+}
+
+.project-box-three {
+	background-color: lightcyan;
+}
+
+.project-box-four {
+	background-color: lightgoldenrodyellow;
+}
+
+.project-box-five {
+	background-color: lightgray;
+}
+
+.project-box-six {
+	background-color: lightgreen;
+}
+
+.project-row, .col-xl, .col-xl, .project-box, .centered a {
+	margin-top: 2%;
+}
+
+.project-row {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 /*
