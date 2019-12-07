@@ -510,7 +510,7 @@ hr {
 	.project-box {
 	width: 250px;
 	height: 250px;
-}
+	}
 }
 
 .project-box img {
@@ -523,39 +523,32 @@ hr {
 	border-radius: 10%;
 }
 
-.projects-h4 {
-	margin-top: 80px;
-	color: #2e3141;
-	font-size: 18px; 
-}
-
-.projects-p {
-	font-size: 10px;
-	color: #2e3141;
+.project-h2 {
+	color: #fff;
 }
 
 .project-box-one {
-	background-color: lightblue;
+	background-color: #2e3141;
 }
 
 .project-box-two {
-	background-color: lightcoral;
+	background-color: #2e3141;
 }
 
 .project-box-three {
-	background-color: lightcyan;
+	background-color: #2e3141;
 }
 
 .project-box-four {
-	background-color: lightgoldenrodyellow;
+	background-color: #2e3141;
 }
 
 .project-box-five {
-	background-color: lightgray;
+	background-color: #2e3141;
 }
 
 .project-box-six {
-	background-color: lightgreen;
+	background-color: #2e3141;
 }
 
 .project-row, .col-xl, .col-xl, .project-box, .centered a {
