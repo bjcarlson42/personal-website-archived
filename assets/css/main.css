@@ -477,6 +477,41 @@ hr {
 }
 
 /*
+* Section Skills
+*/
+#skills {
+	background-image: url(/images/skills-pic.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.skills {
+	text-align: center;
+}
+
+#skills, .skills h2 {
+	font-size: 40px;
+	padding-top: 10px;
+}
+
+.skills ul {
+	display: inline-block;
+}
+
+.skills ul li {
+	list-style-type: none;
+	float: left;
+	padding: 2%;
+	font-size: 100px;
+}
+
+.odd {
+	color: #2e3141;
+}
+
+/*
 * Section Projects
 */
 #projects {
