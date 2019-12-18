@@ -507,8 +507,8 @@ img {
 .skills ul li {
 	list-style-type: none;
 	float: left;
-	padding: 2%;
-	font-size: 100px;
+	padding: 5px;
+	font-size: 70px;
 }
 
 .odd {
