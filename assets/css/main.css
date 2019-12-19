@@ -412,6 +412,12 @@ img {
 	}
 }
 
+@media screen and (max-width: 520px) {
+	.links ul li {
+	font-size: 14px;
+	}
+}
+
 @media screen and (max-width: 370px) {
 	.links ul li {
 	font-size: 12px;
@@ -516,8 +522,8 @@ img {
 }
 
 /*
-* Section Projects
-*/
+* Section Projects      projects break at 1319px
+*/  
 #projects {
 	padding-bottom: 5%;
 	background-color: #fff;
