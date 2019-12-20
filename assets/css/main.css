@@ -516,6 +516,24 @@ img {
 	display: inline-block;
 }
 
+@media screen and (max-width: 425px) {
+	.skills ul {
+		padding-left: 10%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.skills ul {
+		padding-left: 15%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.skills ul {
+		padding-left: 10%;
+	}
+}
+
 .skills ul li {
 	list-style-type: none;
 	float: left;
@@ -560,7 +578,7 @@ img {
 	background-color: #2e3141;
 }
 
-@media screen and (min-width: 425){
+@media screen and (max-width: 424px){
 	.project-box {
 	width: 250px;
 	height: 250px;
@@ -664,9 +682,21 @@ img {
 	border: none;
 }
 
-@media screen and (min-width: 425){
+@media screen and (max-width: 500px){
 	.card {
 	width: 20rem;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.card {
+	width: 18rem;
+	}
+}
+
+@media screen and (max-width: 374px){
+	.card {
+	width: 16rem;
 	}
 }
 
@@ -682,4 +712,9 @@ img {
 	color: #fff;
 }
 
+@media screen and (max-width: 374px){
+	.p-footer {
+		font-size: 12px;
+	}
+}
 
