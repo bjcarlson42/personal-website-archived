@@ -27,6 +27,7 @@ a {
 a:hover {
 	color: #2e3141;
 	text-decoration: none;
+	transition: .35s ease;
 }
 
 h1 {
@@ -120,6 +121,7 @@ img {
 	background: #fff;
 	border: #2e3141 1px solid;
 	color: #2e3141;
+	transition: .35s ease;
 }
 
 .btn2 {
@@ -132,6 +134,7 @@ img {
 	background: #2e3141;
 	color: #fff;
 	border: #fff solid 1px;
+	transition: .35s ease;
 }
 
 /*
@@ -156,6 +159,7 @@ img {
 
 #navbar a:hover {
 	background-color: lightgray;
+	transition: .35s ease;
 }
 
 .nav-link, .navbar-brand {
@@ -178,14 +182,13 @@ img {
 	border: none;
 }
 
-/* .sticky {
-  position: fixed;
-	top: 0;
-	border-bottom: 2px solid rgb(81, 96, 150);
-} */
+/* remove 'Benjamin Carlson' in hamburger menu (works with jquery) */
+.hidden {
+  visibility: hidden;
+}
 
-.sticky + .content {
-  padding-top: 60px;
+.notHidden {
+  visibility: show;
 }
 
 /*
@@ -429,7 +432,7 @@ img {
 */
 #experience {
 	background-color: #2e3141;
-	margin-top: 96.1vh;
+	margin-top: 96.2vh;
 	padding-bottom: 5%;
 }
 
@@ -437,6 +440,8 @@ img {
 	text-align: center;
 	padding-top: 5%;
 	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
 }
 
 .date {
@@ -504,6 +509,7 @@ img {
 #skills, .skills h2 {
 	font-size: 40px;
 	padding-top: 10px;
+	font-weight: bold;
 }
 
 .skills ul {
@@ -522,7 +528,7 @@ img {
 }
 
 /*
-* Section Projects
+* Projects Section
 */
 #projects {
 	padding-bottom: 5%;
@@ -533,11 +539,8 @@ img {
 	text-align: center;
 	padding-top: 10%;
 	color: #2e3141;
-}
-
-.project-h2 {
+	font-size: 40px;
 	font-weight: bold;
-	color: #2e3141;
 }
 
 .project-row {
@@ -629,6 +632,8 @@ img {
 	color: #fff;
 	text-align: center;
 	padding-top: 5%;
+	font-size: 40px;
+	font-weight: bold;
 }
 
 .blog-container, .col {

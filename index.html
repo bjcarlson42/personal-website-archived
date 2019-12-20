@@ -102,7 +102,9 @@
                             <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/bjcarlson42/"><img
                                     src="/images/LI-In-Bug.png" alt="" width="24px" height="24px"> LinkedIn</a>
                         </li>
-                        <a class="navbar-brand" href="index.html">Benjamin Carlson</a>
+                        <div id="removeMe">
+                            <a class="navbar-brand notHidden" href="index.html">Benjamin Carlson</a>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" target="_blank" href="/blog"><img src="/images/Logo-Ben.png" alt=""
                                     width="24px" height="24px">
@@ -247,8 +249,10 @@
                             <img src="/images/pic04.jpg" alt="">
                             <div class="centered">
                                 <h2 class="project-h2">Personal Website</h2>
-                                <a target="_blank" href="https://github.com/bjcarlson42/personal-website"
-                                    class="btn btn-primary btn1" style="width: 75%">View Code</a>
+                                <div class="buttons-projects">
+                                    <a target="_blank" href="https://github.com/bjcarlson42/personal-website" class="btn btn-primary btn1"
+                                        style="width: 75%">View Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -419,8 +423,8 @@
                 Carlson</a></p>
     </section>
 
-    <script src="/assets/js/script.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
