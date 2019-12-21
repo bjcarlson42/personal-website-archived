@@ -182,13 +182,12 @@ img {
 	border: none;
 }
 
-/* remove 'Benjamin Carlson' in hamburger menu (works with jquery) */
-.hidden {
-  visibility: hidden;
-}
-
-.notHidden {
-  visibility: show;
+@media screen and (max-width: 767px) {
+	.navbar-brand {
+		position: absolute;
+		top: 0px;
+		left: -5000px;
+	}
 }
 
 /*

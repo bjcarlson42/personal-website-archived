@@ -10,17 +10,3 @@
 //         navbar.classList.remove("sticky");
 //     }
 // }
-
-//remove 'Benjamin Carlson' in hamburger menu
-$(function () {
-
-    $(window).bind("resize", function () {
-        console.log($(this).width())
-        if ($(this).width() < 844) {
-            $('#removeMe a').removeClass('notHidden').addClass('hidden')
-        }
-        else {
-            $('#removeMe a').removeClass('hidden').addClass('notHidden')
-        }
-    })
-})
