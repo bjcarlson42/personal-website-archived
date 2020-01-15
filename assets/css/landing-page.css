@@ -183,3 +183,35 @@ h4 {
   width: 100%;
   height: 5%;
 }
+
+.h5-div {
+  width: 40%;
+  text-align: center;
+  transform: translateY(800%);
+  position: absolute;
+  padding-left: 10%; 
+}
+
+.freelance-h5 {
+  color: #fff;
+  border: 3px solid #fff;
+  display: inline-block;
+  padding: 5px;
+}
+
+.resume-h5 {
+  color: #516096;
+  border: 3px solid #516096;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* for phones */
+@media screen and (max-width: 426px) {
+  .h5-div {
+  position: absolute;
+  transform: translateY(400%);
+  width: 90%;
+  padding-left: 10%;
+  }
+}
