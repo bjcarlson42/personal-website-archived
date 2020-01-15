@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, span {
+    color: #fff;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100vh;
+    background-color: #516096;
+    width: 100%;
+}
+
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+}
+
+#left-text {
+  float: right;
+}
+
+#text-right {
+  float: left;
+}
+
+/* large phone and down */
+@media screen and (max-width: 426px) {
+.parent {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+
+.div2 { 
+  grid-area: 2 / 1 / 3 / 2; 
+  }
+
+  #left-text {
+    float: left;
+    padding-top: 10%;
+}
+
+#text-right {
+  float: left;
+  }
+}
+
+.div1 h1, .div2 h1 {
+  transform: translateY(400%);
+  padding: 0 1%;
+}
+
+.h3 {
+  position: absolute;
+  transform: translateX(60%);
+}
+
+/* small laptop */
+@media screen and (max-width: 1025px) {
+    .div1 h1, .div2 h1 {
+      font-size: 30px;
+  }
+}
+
+
+/* tablet */
+@media screen and (max-width: 769px) {
+  .div1 h1, .div2 h1 {
+      font-size: 22px;
+  }
+
+  .overlay a p {
+  font-size: 25px;
+}  
+}
+
+
+/* large phone */
+@media screen and (max-width: 426px) {
+  .div1, .div2 {
+    height: 50vh;
+  }
+}
+
+h4 {
+  color: #2e3141;
+}
+
+/* for the terminal animation */
+.hidden {
+  opacity:0;
+}
+.console-container {
+  display:block;
+  font-size: 30px;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+  color: #516096;
+}
+
+/* menu */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+#noClick {
+  position: absolute;
+  width: 100%;
+  height: 5%;
+}
+
+.h5-div {
+  width: 40%;
+  text-align: center;
+  transform: translateY(800%);
+  position: absolute;
+  padding-left: 10%; 
+}
+
+.freelance-h5 {
+  color: #fff;
+  border: 3px solid #fff;
+  display: inline-block;
+  padding: 5px;
+}
+
+.resume-h5 {
+  color: #516096;
+  border: 3px solid #516096;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* for phones */
+@media screen and (max-width: 426px) {
+  .h5-div {
+  position: absolute;
+  transform: translateY(400%);
+  width: 90%;
+  padding-left: 10%;
+  }
+}
