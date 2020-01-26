@@ -1,8 +1,27 @@
-//Subheading terminal effect
-consoleText(['Freelance Web Developer.', 'Computer Science Student.', 'Wordpress Developer.', 'Blogger.', 'HTML5 Template Developer.'], 'text');
+// Gets the current year for footer
+var date = new Date();
+var currentYear = date.getFullYear();
+document.getElementById("date").innerHTML = "&copy; 2019 -  " + currentYear + " | Benjamin J. Carlson";
+
+// Sticky navigation bar
+window.onscroll = function () { myFunction() };
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+// Subheading terminal effect
+consoleText(['Freelance Web Developer', 'Computer Science Student', 'Wordpress Developer', 'Blogger', 'HTML5 Template Developer'], 'text');
 
 function consoleText(words, id, colors) {
-    if (colors === undefined) colors = ['#516096'];
+    if (colors === undefined) colors = ['#2e3141'];
     var visible = true;
     var con = document.getElementById('console');
     var letterCount = 1;
@@ -50,11 +69,10 @@ function consoleText(words, id, colors) {
     }, 400)
 }
 
-//menu
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
+// Navbar active link
+$(document).ready(function () {
+    $('#navbar a').on("click", function () {
+        $(this).parent().siblings().find("a").removeClass('active');
+        $(this).addClass('active');
+    });
+});
