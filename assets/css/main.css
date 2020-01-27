@@ -573,7 +573,7 @@ a {
     box-shadow: 0 3000px rgba(255, 255, 255, 0.4) inset;
 }
 
-.div1-project:hover, .div2-projects:hover, .div3-projects:hover, .div4-projects:hover {
+.div1-projects:hover, .div2-projects:hover, .div3-projects:hover, .div4-projects:hover {
     box-shadow: none;
 }
 
