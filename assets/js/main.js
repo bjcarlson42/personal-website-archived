@@ -1,7 +1,7 @@
 // Gets the current year for footer
 var date = new Date();
 var currentYear = date.getFullYear();
-document.getElementById("date").innerHTML = "&copy; 2019 -  " + currentYear + " | Benjamin J. Carlson";
+document.getElementById("date").innerHTML = "2019 -  " + currentYear + " | Benjamin J. Carlson";
 
 // Sticky navigation bar
 window.onscroll = function () { myFunction() };
