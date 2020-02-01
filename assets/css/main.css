@@ -696,6 +696,11 @@ td, th {
     padding: 20px 30px 20px 0;
 }
 
+th {
+    float: left;
+    /* safari fix */
+}
+
 /*************
 * Footer
 *************/
