@@ -706,6 +706,78 @@ th {
 }
 
 /*************
+* Blog
+*************/
+
+#blog {
+    background-color: #fff;
+    background-image: url("../img/project1-min.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blog h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.smartphone {
+    position: relative;
+    width: 400px !important;
+    height: 700px !important;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+}
+
+.smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+
+.smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+.smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+}
+
+@media screen and (max-width: 426px) {
+    .smartphone {
+        width: 275px !important;
+        height: 600px;
+    }
+}
+
+/*************
 * Footer
 *************/
 

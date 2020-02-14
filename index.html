@@ -162,10 +162,9 @@
                         Present
                     </h3>
                     <h4 class="main-h4">New Britain, CT</h4>
-                    <p class="main-p">This is where I currently am in my life - studying computer science at CCSU. So
-                        far it is going well and I
-                        am enjoying all of my classes. I look forward to the remainder of my schooling here and all the
-                        things that I will learn.
+                    <p class="main-p">Making the decision to transfer from Bryant to CCSU was both an easy and hard one. 
+                        It was hard to leave Bryant behind but easy becasue I was leaving to study my passion. So far at CCSU I 
+                        am enjoying all of my classes.
                     </p>
                 </div>
             </div>
@@ -537,6 +536,65 @@
             </div>
         </div>
     </section>
+
+    <!-- Blog -->
+        <style>
+            /* The device with borders */
+            .smartphone {
+                position: relative;
+                width: 360px;
+                height: 640px;
+                margin: auto;
+                border: 16px black solid;
+                border-top-width: 60px;
+                border-bottom-width: 60px;
+                border-radius: 36px;
+            }
+    
+            /* The horizontal line on the top of the device */
+            .smartphone:before {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 5px;
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #333;
+                border-radius: 10px;
+            }
+    
+            /* The circle on the bottom of the device */
+            .smartphone:after {
+                content: '';
+                display: block;
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                left: 50%;
+                bottom: -65px;
+                transform: translate(-50%, -50%);
+                background: #333;
+                border-radius: 50%;
+            }
+    
+            /* The screen (or content) of the device */
+            .smartphone .content {
+                width: 360px;
+                height: 640px;
+                background: white;
+            }
+        </style>
+    </head>
+    
+    <section id="blog">
+        <h2 data-aos="fade-up">From The Blog</h2>
+        <div class="smartphone" data-aos="fade-up">
+            <iframe src="https://www.benjamincarlson.net/blog/" frameborder="0" style="width:100%;border:none;height:100%"></iframe>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer>
