@@ -496,12 +496,16 @@ a {
     padding: 60px 0 20px 0;
 }
 
+.projects-p-subtitle {
+    text-align: center;
+}
+
 .modal-full {
     width: 95%;
 }
 
 .modal-full .modal-content {
-    min-height: 100vh;
+    min-height: 95vh;
 }
 
 .project-h2 {
