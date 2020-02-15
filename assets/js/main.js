@@ -56,17 +56,6 @@ function consoleText(words, id, colors) {
             letterCount += x;
         }
     }, 30) //default: 120
-    window.setInterval(function () {
-        if (visible === true) {
-            //con.className = 'console-underscore hidden'
-            visible = false;
-
-        } else {
-            con.className = 'console-underscore'
-
-            visible = true;
-        }
-    }, 400)
 }
 
 // Navbar active link

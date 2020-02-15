@@ -323,10 +323,10 @@ a {
 }
 
 /*************
-* Freelance Section
+* Intro Section
 *************/
 
-#freelance {
+#intro {
     background-color: #fff;
 }
 
@@ -711,14 +711,13 @@ th {
 
 #blog {
     background-color: #fff;
-    background-image: url("../img/project1-min.jpg");
-    /* Set a specific height */
-    min-height: 500px;
-    /* Create the parallax scrolling effect */
+    background-image: url("../img/blog-background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 470px;
+    box-shadow: 0 3000px rgba(255, 255, 255, 0.3) inset;
 }
 
 #blog h2 {
@@ -727,53 +726,37 @@ th {
     padding: 15px 0;
 }
 
-.smartphone {
-    position: relative;
-    width: 400px !important;
-    height: 700px !important;
-    margin: auto;
-    border: 16px black solid;
-    border-top-width: 60px;
-    border-bottom-width: 60px;
-    border-radius: 36px;
+#blog ul li {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
 }
 
-.smartphone:before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 10px;
+#blog ul a {
+    color: #2e3141;
 }
 
-.smartphone:after {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 50%;
-    bottom: -65px;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 50%;
+#blog ul a:hover {
+    text-decoration: line-through;
 }
 
-.smartphone .content {
-    width: 360px;
-    height: 640px;
-    background: white;
+@media screen and (max-width: 1000px) {
+    #blog ul li {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 426px) {
-    .smartphone {
-        width: 275px !important;
-        height: 600px;
+    #blog ul li {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    #blog ul li {
+        font-size: .8em;
     }
 }
 
