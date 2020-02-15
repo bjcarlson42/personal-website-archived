@@ -58,7 +58,7 @@ function consoleText(words, id, colors) {
     }, 30) //default: 120
     window.setInterval(function () {
         if (visible === true) {
-            con.className = 'console-underscore hidden'
+            //con.className = 'console-underscore hidden'
             visible = false;
 
         } else {
